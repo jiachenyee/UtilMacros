@@ -3,6 +3,8 @@ import UtilMacros
 let a = 17
 let b = 25
 
-let (result, code) = #stringify(a + b)
+func x() {
+    #todo("Build thing")
+}
 
-print("The value \(result) was produced by the code \"\(code)\"")
+x()

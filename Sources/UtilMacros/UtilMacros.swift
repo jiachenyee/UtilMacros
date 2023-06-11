@@ -7,5 +7,6 @@
 ///     #stringify(x + y)
 ///
 /// produces a tuple `(x + y, "x + y")`.
-@freestanding(expression)
-public macro stringify<T>(_ value: T) -> (T, String) = #externalMacro(module: "UtilMacrosMacros", type: "StringifyMacro")
+
+@freestanding(declaration)
+public macro todo(_ value: String) = #externalMacro(module: "UtilMacrosMacros", type: "TodoMacro")
