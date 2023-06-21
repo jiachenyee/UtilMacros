@@ -15,6 +15,7 @@ import SwiftDiagnostics
 @main
 struct UtilMacrosPlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
-        TodoMacro.self
+        TodoMacro.self,
+        URLMacro.self
     ]
 }

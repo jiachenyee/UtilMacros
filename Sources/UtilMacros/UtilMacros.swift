@@ -10,3 +10,8 @@
 
 @freestanding(declaration)
 public macro todo(_ value: String) = #externalMacro(module: "UtilMacrosMacros", type: "TodoMacro")
+
+import Foundation
+
+@freestanding(expression)
+public macro url(_ value: String) -> URL = #externalMacro(module: "UtilMacrosMacros", type: "URLMacro")
